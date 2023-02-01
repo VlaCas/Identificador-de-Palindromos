@@ -1,3 +1,3 @@
-let identificador = () => {let texto = document.getElementById("texto").value.replace(/[¿?¡!,.:;"'\(){}\-_ ]/g, "").toLowerCase(); texto = texto.replace(/[á]/g, "a"); texto = texto.replace(/[é]/g, "e"); texto = texto.replace(/[í]/g, "i");  
-    texto = texto.replace(/[ó]/g, "o"); texto = texto.replace(/[ú]/g, "u"); let resultado = texto.split("").reverse().join(""); 
+let identificador = () => {let texto = document.getElementById("texto").value.replace(/[¿?¡!,.:;"'\(){}\-_ ]/g, "").toLowerCase(); texto = texto.replace(/[á]/g, "a"); texto = texto.replace(/[é]/g, "e"); 
+    texto = texto.replace(/[í]/g, "i"); texto = texto.replace(/[ó]/g, "o"); texto = texto.replace(/[ú]/g, "u"); let resultado = texto.split("").reverse().join(""); 
     resultado === texto ? document.getElementById("resultado").innerHTML = "Resultado: Es Palíndromo." : document.getElementById("resultado").innerHTML = "Resultado: No es Palíndromo.";}
